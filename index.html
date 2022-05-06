@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sid's Little Adventure</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400;900&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="css/estilo.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
+</head>
+<body id="body">
+<div id="loadingScreen">
+    <img src='images/gifsid.gif' id='gifSid' height="200">
+    <span id="loadingMessage" class="unselectable">LOADING</span>
+</div>
+
+<div id="finalBoss">
+    <div id="tooltip1" class="fontLondrina unselectable" >
+        Click on one of the animals bellow to select them and click on the column on the left of the screen to place the animal you chose.
+    </div>
+    <div id="tooltip2" class="fontLondrina unselectable" >
+        <p>Special Ability: <span id="field1"></span></p>
+        <p>Combat: <span id="field2"></span></p>
+        <p>Type: <span id="field3"></span></p>
+
+    </div>
+
+    <div id="endGameScreen">
+        <img src="images/victory.png" id="imgEGS" height="407" width="753">
+    </div>
+
+    <div id="finalBossBackground" ></div>
+
+    <div id="topBar">
+
+    </div>
+
+    <div id="leftSideBar">
+
+    </div>
+
+    <div id="rightSideBar">
+
+    </div>
+
+    <div id="barrasHp"></div>
+
+    <div id="botBar" class="fontLondrina">
+        <div id="botBarSide1">
+        </div>
+
+        <div id="botBarMenu">
+        </div>
+
+        <div id="currency">
+            <div id="pairPrice"><span id="price"></span><img id="bolotaPrice" src="images/bolota.png" width="40" height="40"></div>
+        </div>
+
+        <div id="botBarSide2">
+        </div>
+    </div>
+
+    <div id="finalBossScreen">
+        <div id="spawnNumInimigo0"></div>
+        <div id="spawnNum0"></div>
+    </div>
+
+
+</div>
+
+
+
+<div id="mainMenu">
+    <img src="images/sid.png" id="sid1">
+    <div id="fpsDiv" class="unselectable">
+        <span id="fpsMessage">Fps set as: <span id="fpsValue"></span></span>
+    </div>
+    <div id="titleMainMenu" class="unselectable">
+        <span id="title1">SID'S</span><span id="title2">LITTLE</span><span id="title3">ADVENTURE</span>
+    </div>
+    <div id="botoes" class="unselectable">
+        <div id="play" class="botao">START</div>
+        <div id="levels" class="botao">LEVELS</div>
+        <div id="calibrate" class="botao">CALIBRATE</div>
+        <div id="about" class="botao">ABOUT</div>
+    </div>
+</div>
+
+
+<div id="levelsPage" class="unselectable">
+    <div id="backbtn">Back</div>
+    <div id="levelTitle">CHOOSE A LEVEL</div>
+    <div id="botoes2">
+        <div id="botaoTutorial" class="botao">TUTORIAL</div>
+        <div id="botaoNivel1" class="botao">LEVEL 1</div>
+        <div id="botaoFinalBoss" class="botao">FINAL BOSS</div>
+    </div>
+</div>
+
+<div id="aboutPage" class="unselectable">
+    <img src="images/sid.png" id="sid2">
+    <div id="backbtn2">Back</div>
+    <div id="titleMainMenu2">
+        <span id="title12">SID'S</span><span id="title22">LITTLE</span><span id="title32">ADVENTURE</span>
+    </div>
+    <div id="names">
+        <div id="nameTitle" class="nome">Game designed and created by</div>
+        <div class="nome">André Domingues</div>
+        <div class="nome">Juliana Assis</div>
+        <div class="nome">Luís Simões</div>
+        <div class="nome">Vasco Silva</div>
+    </div>
+    <div id="quadrado">
+        <div id="quadrante1" class="quadrante">
+            <div class="nome">University project for</div>
+            <div class="nome">Laboratório Multimédia 3</div>
+            <div class="nome"><b id="ntc">NTC</b>UAveiro</div>
+        </div>
+        <div id="quadrante2" class="quadrante">
+            <div class="nome">Under the theme</div>
+            <div class="nome"><b>Stag Beetle</b></div>
+            <div class="nome">provided by Gamers4Nature</div>
+        </div>
+        <div id="quadrante3" class="quadrante">
+            <div class="nome">Developed during</div>
+            <div class="nome">January and February</div>
+            <div class="nome">of 2021</div>
+        </div>
+    </div>
+</div>
+
+<div id="respawnScreen">
+    <span id="messageBolota">
+        <span id="bolotaTotal"> 50 </span> -<span id="bolotapercent"> 5 </span><img src="images/bolota.png" width="50" height="50">
+    </span>
+    <span id="respawnMessage">Press space to respawn</span>
+</div>
+
+<div id="gameObjects"></div>
+
+<div id="game">
+    <div id="player" ></div>
+    <div id="fpsCounter" class="fontLondrina"></div>
+    <div id="dialogue" class="unselectable">
+        <img id="retratoDialogo" src="images/caraAmigo1.png">
+        <div id="textDialogue"></div>
+    </div>
+    <div id="nBolotas" class="fontLondrina">
+        <span id="nBolotasSlot">0</span><img id="bolotaImg" src="images/bolota.png" width="40" height="40">
+    </div>
+
+    <!--<div id="overlayJogo"></div>-->
+    <div id="backgroundlayer">
+    </div>
+
+</div>
+
+<div id="videoPage">
+    <div id="messageBG">
+        <span id="messageText" class="fontLondrina">Press Space to play or Esc to skip</span>
+    </div>
+
+    <video id="videoPlayer">
+        <source src="videos/video1.mp4" type="video/mp4">
+    </video>
+</div>
+
+
+
+
+</body>
+</html>
+

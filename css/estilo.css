@@ -1,0 +1,541 @@
+
+body {
+	overflow: hidden;
+}
+img {
+	position: absolute;
+}
+
+
+
+#tooltip1 {
+	position: absolute;
+	background-color: #66afe9;
+	padding: 10px;
+	border-radius: 5px;
+	z-index: 20;
+	width: 300px;
+	font-size: 20px;
+}
+
+#tooltip2 {
+	visibility: hidden;
+	position: absolute;
+	background-color: #66afe9;
+	padding: 10px;
+	border-radius: 5px;
+	z-index: 20;
+	font-size: 18px;
+}
+
+#tooltip2 p {
+	margin-bottom: 0;
+}
+
+
+
+#endGameScreen {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	z-index: 10;
+}
+
+#imgEGS {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#player {
+	position: absolute;
+	left: 100px;
+	top: 300px;
+	width: 173px;
+	height: 80px;
+	background-image: url("../images/spriteVacaLoura.png");
+	background-position-x: 0;
+	background-size: cover;
+	z-index: 25;
+}
+
+#nBolotas {
+	position: absolute;
+	left: 90vw;
+	top: 15px;
+	transform: translate(-50%, 0%);
+	display: inline-block;
+	text-align: center;
+	z-index: 40;
+
+}
+
+#nBolotasSlot, #bolotaImg {
+	vertical-align: middle;
+	position: relative;
+}
+#nBolotasSlot {
+	margin-right: 4px;
+	margin-left: 4px;
+	font-size: 30px;
+}
+
+
+#respawnScreen {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(23,23,23,0);
+	z-index: 50;
+	display: flex;
+	justify-content: center;
+}
+
+#gameObjects {
+	position: absolute;
+	left: 0px;
+}
+
+
+.botao {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+.nome {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 40px;
+	font-size: 40px;
+	line-height: 45px;
+}
+
+#play, #levels, #about, #botaoTutorial, #botaoNivel1, #botaoFinalBoss, #calibrate {
+	width: 100%;
+	height: 40px;
+}
+
+
+#botoes, #botoes2 {
+	display: flex;
+	width: 25%;
+	position: absolute;
+	top: 60%;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#names {
+	display: flex;
+	width: 45%;
+	position: absolute;
+	top: 28%;
+	justify-content: center;
+	flex-wrap: wrap;
+	color: white;
+}
+
+#nameTitle {
+	margin-bottom: 30px;
+	font-weight: 300;
+}
+
+#quadrado {
+	width: 100%;
+	display: flex;
+	position: absolute;
+	top: 70%;
+	justify-content: center;
+	flex-wrap: wrap;
+	color: white;
+	font-weight: 300;
+}
+
+#ntc {
+	margin-right: 10px;
+}
+.quadrante {
+	width: 33.3%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	color: white;
+}
+
+.unselectable {
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* IE 10 and IE 11 */
+	user-select: none; /* Standard syntax */
+}
+
+#mainMenu {
+	font-family: 'Londrina Solid';
+	font-size: 40px;
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	background-image: url("../images/bg/backgroundMainMenu.png");
+	font-weight: 400;
+	background-size: cover;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	z-index: 100;
+	color: white;
+}
+
+#levelsPage {
+	font-family: 'Londrina Solid';
+	font-size: 40px;
+	font-weight: 400;
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	background-image: url("../images/bg/backgroundMainMenu2.png");
+	background-size: cover;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	z-index: 100;
+	color: white;
+}
+
+#backbtn, #backbtn2 {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-weight: 400;
+	font-size: 40px;
+	color: white;
+}
+
+#loadingScreen {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: darkslategrey;
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+}
+
+#levelsPage {
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+}
+
+
+
+/*cenas do finalboss              */
+
+#finalBoss img {
+
+}
+
+#finalBoss div {
+	position: absolute;
+}
+
+#finalBoss {
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(123,212,212,0.5);
+	position: absolute;
+	z-index: 150;
+}
+
+#finalBossBackground {
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	background-image: url("../images/backgroundFinalBoss.png");
+	background-size: 100% 100%;
+	z-index: -20;
+}
+
+#topBar {
+
+}
+
+#botBar {
+	z-index: 20;
+}
+#leftSideBar {
+	z-index: 20;
+}
+
+#barrasHp {
+
+}
+
+#rightSideBar {
+
+}
+
+#finalBossScreen {
+
+	position: absolute;
+}
+
+
+#botBarSide1 {
+
+}
+#botBarSide2 {
+
+}
+#botBarMenu {
+
+	display: flex;
+	flex-wrap: nowrap!important;
+	overflow-x: auto;
+}
+
+#botBarMenu div {
+	display: inline-block;
+	position: relative;
+}
+
+#botBarMenu img {
+	display: inline-block;
+	position: relative;
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+#botBarMenu > div {
+	border: 2px solid transparent;
+}
+
+
+#currency {
+
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 0 #04162c;
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #6f5a30;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #c7bc92;
+}
+
+::-webkit-scrollbar-thumb:active {
+	background: #43391c;
+}
+
+#price, #bolotaPrice {
+	vertical-align: middle;
+	position: relative;
+}
+#price {
+	margin-right: 4px;
+	margin-left: 4px;
+	font-size: 30px;
+}
+
+#pairPrice {
+	display: inline-block;
+	text-align: center;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#fpsDiv {
+	width: 30%;
+	background-color: #5cb85c;
+	height: 100px;
+	position: absolute;
+	top: 45%;
+	display: flex;
+	justify-content: center;
+	line-height: 100px;
+	border-radius: 30px;
+	font-weight: 300;
+}
+
+.maximg {
+	max-width: 100%;
+	max-height: 100%;
+	padding: 10px;
+	top: 0;
+}
+
+/* TEEEEEEEEEEEEEEEESTE REEEEEEEEEEEEEEEEEEEEEEEE*/
+#characterBox1:hover {
+	border: 2px solid red;
+}
+
+#title1, #title12 {
+	color: #631414;
+}
+
+#title2, #title3, #title22, #title32 {
+	margin-left: 20px;
+}
+
+#titleMainMenu, #levelTitle {
+	font-size: 75px;
+	top: 30%;
+	position: absolute;
+}
+
+#titleMainMenu2 {
+	font-size: 75px;
+	top: 7%;
+	position: absolute;
+	color: white;
+}
+
+#respawnMessage {
+	font-family: 'Londrina Solid';
+	font-weight: 400;
+	position: absolute;
+	top: 50%;
+	color: white;
+	font-size: 50px;
+}
+
+#messageBolota {
+	font-family: 'Londrina Solid';
+	font-weight: 400;
+	position: absolute;
+	top: 40%;
+	color: white;
+	font-size: 50px;
+	line-height: 50px;
+}
+#bolotaTotal {
+	color: #5cb85c;
+}
+
+#bolotapercent {
+	color: darkred;
+}
+
+#loadingMessage {
+	font-family: 'Londrina Solid';
+	font-weight: 400;
+	position: absolute;
+	top: 60%;
+	color: white;
+	font-size: 50px;
+}
+
+#videoPage {
+	position: absolute;
+	height: 100vh;
+	width: 100vw ;
+}
+
+#messageBG {
+	position: absolute;
+	background-color: rgba(0,0,0,0.3);
+	height: 100vh;
+	width: 100vw ;
+	display: flex;
+	justify-content: center;
+	z-index: 100;
+}
+
+#messageText {
+	position: absolute;
+	top: 50%;
+	color: white;
+	font-size: 40px;
+}
+
+#videoPlayer {
+	position: absolute;
+}
+
+#fpsCounter {
+	position: absolute;
+	color: white;
+	font-size: 12px;
+	top: 0;
+	left: 0;
+	z-index: 40;
+}
+
+.fontLondrina {
+	font-family: 'Londrina Solid';
+	font-weight: 300;
+}
+
+#dialogue {
+	background-color: #66afe9;
+	border-radius: 50px;
+	height: 300px;
+	padding: 30px;
+	position: absolute;
+	z-index: 150;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 100px;
+	font-family: 'Londrina Solid';
+	font-weight: 400;
+	font-size: 50px;
+	color: white;
+	opacity: 0;
+}
+
+#retratoDialogo {
+	height: 50%;
+}
+
+#textDialogue {
+	position: absolute;
+	height: 100%;
+	font-weight: 300;
+}
+
+#aboutPage {
+	font-family: 'Londrina Solid';
+	font-weight: 400;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	background-image: url("../images/bg/backgroundMainMenu2.png");
+	background-size: cover;
+}
+
+#overlayJogo {
+	position: absolute;
+	background-image: url("../images/overlay.png");
+	background-size: 100% 100%;
+	z-index: 15;
+	height: 100vh;
+	width: 100vw;
+}
+
+#sid1, #sid2 {
+	position: absolute;
+	height: 55px;
+}
+
